@@ -185,3 +185,80 @@ console.log(someResult);
 let evryNumbers = [1, 2, 3, 4, 56, 7, 8];
 let evryResult = evryNumbers.every(item => item > 0);
 console.log(evryResult);
+
+/*
+:::::::::::::::::::::::::::
+  flat
+:::::::::::::::::::::::::::
+*/
+// const flatNumberss = [1, 2, [3, 4, [5, [6, 7]], [[[[8]]]]]];
+// const numbersflattenOnce = flatNumberss.flat();
+// console.log(numbersflattenOnce);
+
+/*
+:::::::::::::::::::::::::::
+  join
+:::::::::::::::::::::::::::
+*/
+let names = ["Atigh", "Larry", "Musk"];
+let joinNames = names.join(">");
+console.log(joinNames);
+/*
+:::::::::::::::::::::::::::
+    isArray static
+:::::::::::::::::::::::::::
+*/
+
+let isArrayNumbers = [1, 3, 4, 5, 6];
+console.log(Array.isArray(isArrayNumbers));
+
+/*
+:::::::::::::::::::::::::::
+    sort 
+:::::::::::::::::::::::::::
+*/
+let sortNames = ["Atigh", "Chavie", "Mouvid", "Hamoud"];
+console.log(sortNames.sort());
+let sortNumbers = [23, 56, 45, 2, 4, 56, 89, 43];
+console.log(sortNumbers.sort((a, b) => a - b));
+
+/*
+:::::::::::::::::::::::::::
+    pop
+:::::::::::::::::::::::::::
+*/
+let popNumbers = [1, 2, 34, 5];
+popNumbers.pop();
+console.log("popNumbers", popNumbers);
+/*
+:::::::::::::::::::::::::::
+    fill
+:::::::::::::::::::::::::::
+*/
+
+/*
+:::::::::::::::::::::::::::
+    reverce 
+:::::::::::::::::::::::::::
+*/
+let reverceNumbers = [1, 2, 3, 4, 5, 6];
+reduceNumbers.reverse();
+console.log("reduceNumbers", reduceNumbers);
+
+/*
+:::::::::::::::::::::::::::
+    shift 
+:::::::::::::::::::::::::::
+*/
+let shiftNumbers = [1, 2, 3, 4];
+shiftNumbers.shift();
+console.log(shiftNumbers);
+
+/*
+:::::::::::::::::::::::::::
+    unshift
+:::::::::::::::::::::::::::
+*/
+let unshiftNumbers = [1, 2, 3, 4, 5];
+unshiftNumbers.unshift(-1, 0);
+console.log(unshiftNumbers);
