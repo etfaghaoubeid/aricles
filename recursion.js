@@ -24,3 +24,35 @@ function fibonacci(n) {
 }
 let fibo = fibonacci(10)
 console.log(fibo)
+
+console.log('===========================================');
+
+function countDown(n){
+    if(n <0 ){
+      return ;
+    }
+    console.log(n)
+     countDown(n-1)
+}
+countDown(4)
+
+console.log('===========================================');
+
+
+let categories = [
+    {id:'animals',parent:null},
+    {id:'mammals',parent:'animals'},
+    {id:'cats',parent:'mammals'},
+    {id:'dog',parent:'mammals'},
+    {id:'chihuahua',parent:'dogs'},
+    {id:'labrador',parent:'dogs'},
+
+
+
+]
+function makeTree(animalCategories,parent){
+    let node = {}
+    return animalCategories.filter(c=>c.parent == null)
+    animalCategories.forEach(c=>node[])
+}
+console.log(makeTree(categories,null));
